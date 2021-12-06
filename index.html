@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <div id="header">
+      <div id="header_left">
+        <img src="images/logo.svg" id="logo" onclick='localStorage.clear();'>
+        <p>Features</p>
+        <p>Pricing</p>
+        <p>Resources</p>
+      </div>
+      <div id="header_right">
+        <p>Login</p>
+        <button>Sign Up</button>
+      </div>
+    </div>
+  </header>
+  <div id="banner">
+    <div id="left_banner">
+      <div id="left_banner_main">
+        <h1>More than just shorter links</h1>
+
+        <p>Build your brand’s recognition and get detailed insights 
+        on how your links are performing.</p>
+
+        <button class="get_started_button">Get Started</button>
+      </div>
+    </div>
+    <div id="right_banner">
+      <img src="images/illustration-working.svg">
+    </div>
+  </div>
+  <div id="form_container">
+    <div id="form">
+
+      <input type="text" placeholder="Shorten a link here..." id="input" autocomplete="off" onclick="clearError()">
+  
+      <button id="shorten_it_button" onclick="addLink()">Shorten It!</button>
+  
+    </div>
+  </div>
+
+  <main>
+    <div id="link_container">
+
+    </div>
+    <div id="stats">
+      <h2>Advanced Statistics</h2>
+
+      Track how your links are performing across the web with</br>our 
+      advanced statistics dashboard.
+    </div>
+    <div id="card_container">
+      <div id="card_line">
+        <div class="card_object" id="card1">
+          <div class="card_img"><img src="images/icon-brand-recognition.svg"></div>
+          <h3>Brand Recognition</h3>
+          <p>Boost your brand recognition with each click. Generic links don’t 
+          mean a thing. Branded links help instil confidence in your content.</p>
+        </div>
+
+        <div class="card_object" id="card2">
+          <div class="card_img"><img src="images/icon-detailed-records.svg"></div>
+          <h3>Detailed Records</h3>
+          <p>Gain insights into who is clicking your links. Knowing when and where 
+          people engage with your content helps inform better decisions.</p>
+        </div>
+
+        <div class="card_object" id="card3">
+          <div class="card_img"><img src="images/icon-fully-customizable.svg"></div>
+          <h3>Fully Customizable</h3>
+          <p>Improve brand awareness and content discoverability through customizable 
+          links, supercharging audience engagement.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<div id="get_started">
+
+  <h4>Boost your links today</h4>
+
+  <button class="get_started_button">Get Started</button>
+
+</div>
+
+<footer>
+  <div><img src="images/logo.svg" id="footer_logo"></div>
+  <div></div>
+  <div>
+    <b>Features</b>
+    <p>Link Shortening<p>
+    <p>Branded Links</p>
+    <p>Analytics</p>
+  </div>
+  <div>
+    <b>Resources</b>
+    <p>Blog</p>
+    <p>Developers</p>
+    <p>Support</p>
+  </div>
+  <div>
+    <b>Company</b>
+    <p>About<p>
+    <p>Our Team</p>
+    <p>Careers</p>
+    <p>Contact</p>
+  </div>
+  <div id="social_container">
+    <img src="images/icon-facebook.svg" class="social">
+    <img src="images/icon-twitter.svg" class="social">
+    <img src="images/icon-pinterest.svg" class="social">
+    <img src="images/icon-instagram.svg" class="social">
+  </div>
+</footer>
+<script>
+  setup();
+</script>
+</body>
+</html>
